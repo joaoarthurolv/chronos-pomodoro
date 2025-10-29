@@ -1,15 +1,26 @@
 import "./styles/theme.css";
 import "./styles/global.css";
 
+import { Container } from "./components/Container";
+import { Heading } from "./components/Heading";
+import { Logo } from "./components/Logo";
+
 export function App() {
   return (
-    <div>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum sapiente
-        natus quaerat nihil eius vel reprehenderit voluptatem quisquam, deleniti
-        error fugit porro, consequatur quo delectus. Incidunt blanditiis
-        dignissimos iste ipsum!
-      </p>
-    </div>
+    <>
+      <Container>
+        <Logo />
+      </Container>
+
+      <Container>
+        <Heading>MENU</Heading>
+      </Container>
+      <Container>
+        <Heading>FORM</Heading>
+      </Container>
+      <Container>
+        <Heading>FOOTER</Heading>
+      </Container>
+    </>
   );
 }
