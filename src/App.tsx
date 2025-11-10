@@ -6,6 +6,10 @@ import { Logo } from "./components/Logo";
 import { Menu } from "./components/Menu";
 import { Countdown } from "./components/Countdown";
 import { DefaultInput } from "./components/DefaultInput.tsx";
+import { Cycles } from "./components/Cycles.tsx";
+import { DefaultButton } from "./components/DefaultButton.tsx";
+import { PlayCircleIcon } from "lucide-react";
+import { Footer } from "./components/Footer.tsx";
 
 export function App() {
   return (
@@ -25,7 +29,13 @@ export function App() {
       <Container>
         <form className="form">
           <div className="formRow">
-            <DefaultInput labelText="Qualquer coisa" id="meuInput" type="text" title="TITULO" />
+            <DefaultInput
+              labelText="Qualquer coisa"
+              id="meuInput"
+              type="text"
+              title="TITULO"
+              placeholder="Digite algo"
+            />
           </div>
 
           <div className="formRow">
@@ -33,14 +43,17 @@ export function App() {
           </div>
 
           <div className="formRow">
-            <p>Ciclos</p>
-            <p>0 0 0 0 0 0 0 0 0 0</p>
+            <Cycles />
           </div>
 
           <div className="formRow">
-            <button>Enviar</button>
+            <DefaultButton icon={<PlayCircleIcon />} color="green" />
           </div>
         </form>
+      </Container>
+
+      <Container>
+        <Footer />
       </Container>
     </>
   );
