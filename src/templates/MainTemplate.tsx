@@ -1,5 +1,5 @@
-import "./styles/theme.css";
-import "./styles/global.css";
+import "../styles/theme.css";
+import "../styles/global.css";
 import { Container } from "../components/Container.tsx";
 import { Logo } from "../components/Logo.tsx";
 import { Menu } from "../components/Menu.tsx";
